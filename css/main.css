@@ -1,0 +1,72 @@
+.navbar{
+    background-color: white;
+    
+}
+.logo{
+    margin-top: 5vh;
+    margin-left: 10vh;
+    height: 5vh;
+}
+.link{
+    color: #FF6101;
+    text-decoration: none;
+    font-weight: 600;
+}
+.yazi{
+    margin-left: 18vh;
+}
+.link:hover{
+    text-decoration: underline;
+    color: #FF6101;
+}
+.search{
+    height: 8vh;
+    width: 100%;
+    border-width: 3px;
+    border-color: rgb(153, 153, 153);
+    border-style: none;
+    border-radius: 0.3em;
+}
+.bir{
+    background-color: #FF6101;
+}
+.iki{
+    background-color: #3694B1;
+}
+.uc{
+    background-color: #591AA3;
+}
+.dort{
+    background-color: #418A00;
+}
+.bes{
+    background-color: #45134F;
+}
+.search:focus{
+    height: 8vh;
+    width: 100%;
+    border-width: 3px;
+    outline: none;
+    border-style: none;
+    border-radius: 0.3em;
+}
+.arkasear{
+    display: flex;
+    flex-direction: row;
+    border-width: 3px;
+    border-color: rgb(153, 153, 153);
+    border-style: solid;
+    border-radius: 0.3em;
+}
+.arkasear:focus{
+    border-width: 3px;
+    border-color: #FF6101;
+    border-style: solid;
+    border-radius: 0.3em;
+}
+.aramacubuk{
+    margin-top: 10px;
+}
+.secenekler:hover{
+    background-color: rgb(231, 230, 230);
+}

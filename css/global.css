@@ -1,0 +1,8 @@
+.enust{
+    font-size: small;
+    color: black;
+}
+.enust:hover{
+    color: black;
+    text-decoration: none;
+}
