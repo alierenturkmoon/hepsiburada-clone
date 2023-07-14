@@ -39,9 +39,19 @@
                     <input type="text" placeholder="Ürün, kategori veya marka ara" class="search">
                 </div>
             </div>
-            <div class="col-sm-2">
-                <img src="./img/location-pin.png" alt="" width="24" height="26">
-                  Konum
+            <div class="col-sm-2" style="display: flex;">
+                <img src="./img/location-pin.png" alt="" width="24" height="26" style="margin-top: 10px;">
+                <div class="dropdown">
+                  <p style="display: inline; padding-left: 5px;">Konum</p> <br>
+                  <button type="button" class="dropdown-toggle" data-toggle="dropdown" style="outline: none; background-color: white; border-style: none; color: #FF6101; font-size: small;">
+                    Konum Seç
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">İl seçin</a>
+                    <a class="dropdown-item" href="#">İlçe Seçin</a>
+                    <a class="dropdown-item" href="#">Mahalle Seçin</a>
+                  </div>
+                </div>
             </div>
                 <div class="col-sm-2">
                     <img src="./img/user_747376.png" alt="" width="24" height="24">
@@ -141,74 +151,110 @@
         </div>
     </div>
     <hr>
+    <div style="height: 450px; width: 100%; margin: 0;">  
+        <div>
+            <div style="display: flex; flex-direction: row;">
+                <h2 style="margin-left: 50px;">Süper Fiyat, Süper Teklif</h2>
+                <a href="#" style="margin-top: 12px; margin-left: 10px; color: #FF6101; font-weight: 600;">Tümü ></a>
+            </div>
+            <br>
+            <div style="display: flex; flex-direction: row;">
+                <img src="./img/depremm.jpg" alt="süper fiyatlar" style="border-style: none; border-radius: 10px; margin-left: 50px;">
+                <div style="width: 224px; height: 371px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px; margin-left: 20px;">
+                
+                </div>
+                <div style="width: 224px; height: 371px !important; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px; margin-left: 20px;">
+                
+                </div>
+                <div style="width: 224px; height: 371px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px; margin-left: 20px;">
+                
+                </div>
+                <div style="width: 224px; height: 371px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px; margin-left: 20px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
     <div class="container">
         <footer class="py-5">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Hepsiburada</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179);" >Kullanıcı Bilgilerim</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >İşlem Rehberi</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Hepsiburada.com Twitter Destek</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Mobil Uygulamalar</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Bilgi Toplumu Hizmetleri</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Güvenli Alışveriş Kılavuzu</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Kişisel Verilerin Korunması</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Bilgi Güvenliği Politikası</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >İş Sağlığı ve Güvenliği Çevre Politikamız</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Hepsiburada ile E-ticaret Reklamcılığı</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)" >Kurumsal Hediye Çeki</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179);" >Kullanıcı Bilgilerim</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >İşlem Rehberi</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Hepsiburada.com Twitter Destek</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Mobil Uygulamalar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Bilgi Toplumu Hizmetleri</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Güvenli Alışveriş Kılavuzu</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Kişisel Verilerin Korunması</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Bilgi Güvenliği Politikası</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >İş Sağlığı ve Güvenliği Çevre Politikamız</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Hepsiburada ile E-ticaret Reklamcılığı</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Kurumsal Hediye Çeki</a></li>
               </ul>
             </div>
       
             <div class="col-6 col-md-2 mb-3">
               <h5>Kategoriler</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Bilgisayar / Tablet / Telefon / Laptop</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Kombi / Klimalar</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Çamaşır Makinesi / Bulaşık Makinesi</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Gram Altın / Reşat Altın / Yarım Altın </a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Ayçicek Yağları</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Süpürgeler / Robot Süpürge</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Airsoft / Fritozler</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Kitap / Film / Müzik</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Kış Lastiği / Oto Aksesuar</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Pet Shop / Süpermarket</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Mobilyalar / Mutfak Masa Takımları</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Kahve Makinesi / Cay Makinesi</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Kozmetik / Kişisel Bakım</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Led Tv / Elektronik</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Akülü Araba / Anne & Bebek</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Takı Mücevher / Saat Gözlük Aksesuar</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Duvar Kağıdı / Mobilya</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Bebek Arabası / Bebek Bezi</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">bebe yaka gömlek</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">taşlı topuklu ayakkabı</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">fiyonk topuklu ayakkabı</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">vintage ceket</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">vatkalı ceket</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Bilgisayar / Tablet / Telefon / Laptop</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kombi / Klimalar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Çamaşır Makinesi / Bulaşık Makinesi</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Gram Altın / Reşat Altın / Yarım Altın </a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Ayçicek Yağları</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Süpürgeler / Robot Süpürge</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Airsoft / Fritozler</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kitap / Film / Müzik</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kış Lastiği / Oto Aksesuar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Pet Shop / Süpermarket</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Mobilyalar / Mutfak Masa Takımları</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kahve Makinesi / Cay Makinesi</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kozmetik / Kişisel Bakım</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Led Tv / Elektronik</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Akülü Araba / Anne & Bebek</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Takı Mücevher / Saat Gözlük Aksesuar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Duvar Kağıdı / Mobilya</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Bebek Arabası / Bebek Bezi</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">bebe yaka gömlek</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">taşlı topuklu ayakkabı</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">fiyonk topuklu ayakkabı</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">vintage ceket</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">vatkalı ceket</a></li>
               </ul>
             </div>
       
             <div class="col-6 col-md-2 mb-3">
               <h5>Özel Sayfalar</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Premium</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Okul Alışverişi</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Sevgililer Günü</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Anneler Günü</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Yılbaşı Hediyeleri</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Babalar Günü</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kazandıran Çekiliş</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Popüler Aramalar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Playstation 5</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">xbox series x / xbox series s</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">xbox one / nintendo</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Mi Band 6</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Bluetooth Kulaklık</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Uçak Bileti</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Tüm Kategoriler</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Tüm Satıcılar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Yazarlar</a></li>
               </ul>
             </div>
             
             <div class="col-6 col-md-2 mb-3">
               <h5>Bizi Takip Edin</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: rgb(179, 179, 179)">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">About</a></li>
               </ul>
             </div>
             
