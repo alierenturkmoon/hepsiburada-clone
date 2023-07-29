@@ -48,7 +48,7 @@
     border-radius: 0.3em;
     width: 400px;
 }
-.arkasear:focus{
+.arkasear:clicked{
     border-width: 3px;
     border-color: #FF6101;
     border-style: solid;
@@ -61,18 +61,80 @@
 .secenekler:hover{
     background-color: rgb(231, 230, 230);
 }
-.ucnokta {
-    line-height: normal;
-    margin-bottom: 13px;
-    margin-top: 4px;
-    overflow: hidden;
-    padding: 0 4px;
-    text-align: center;
-    text-overflow: ellipsis;
-  }
+
   .sepet{
     font-size: 15px;
     font-weight: 700;
     color: white;
     font-family: Arial,Helvetica,sans-serif !important;
   }
+  .ara{
+    width: 80px; 
+    border-style: none;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+  .ara:hover{
+    cursor: pointer;
+
+}
+#myDiv.clicked {
+    border-color: #FF6101;
+  }
+  .girisyap{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BEBEBE;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .crsl-btn{
+    background-color: #d69166
+  }
+  .crsl-btn:hover{
+    background-color: #c5855d;
+  }
+  .crsl-btn2{
+    background-color: #b5e0e6
+  }
+  .crsl-btn2:hover{
+    background-color: #9ec7cc;
+  }
+  .crsl-btn3{
+    background-color: #000000
+  }
+.menu{
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.ayrintilar{
+  font-size: 14px;
+  font-family:Arial,Helvetica,sans-serif !important;
+  font-weight: 600;
+  line-height: 1.2;
+
+}
+.cizgi {
+  content: "";
+  left: 0;
+  margin-top: 20px;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  width: 1px;
+  height: 24px;
+  background-color: #e5e5e5;
+}
+.listediv:hover{
+  background-color: #fff;
+  color: #FF6101;
+  cursor: default;
+}
+

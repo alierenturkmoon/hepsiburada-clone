@@ -18,3 +18,57 @@
 .yazi{
     margin-left: 50px;
 }
+
+.uc-nokta {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  i{
+    color: #f58b4a;
+    margin: 0;
+    position: relative;
+    left: -35px;
+  }
+  .sepete-ekle{
+    background-color: #FF6101;
+    border-style: none;
+    border-radius: 5px;
+    height: 35px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+  }
+  .sepete-ekle:hover{
+    background-color: #d85301;
+  }
+.urunler{
+  .sepete-ekle{
+    display: none;
+  }
+}
+.urunler:hover{
+  .sepete-ekle{
+    display: block;
+  }
+  -webkit-box-shadow: 0px 2px 16px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 2px 16px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 16px 1px rgba(0,0,0,0.04);
+}
+.lineheight10px{
+  line-height: 10px;
+}
+.ucnokta {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ikisatirucnokta{
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+    overflow:hidden;
+}
