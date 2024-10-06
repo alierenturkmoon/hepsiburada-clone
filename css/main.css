@@ -1,7 +1,39 @@
+
+
+
+
+.fotograf{
+  border-radius: 10px;
+}
+
 .navbar{
     background-color: white;
     
 }
+
+.dropdown-mousegoturme{
+  color: gray;
+}
+
+.dropdown-mousegoturme:hover{
+  color: #BE4700;
+  text-decoration: none;
+}
+
+.sub-dropdown {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-item:hover .sub-dropdown {
+  display: block;
+}
+
 
 
 .link:hover{
@@ -9,12 +41,15 @@
     color: #FF6101;
 }
 .search{
-    height: 30px;
+    height: 50px;
     width: 400px;
-    border-width: 3px;
+    border-width: 1px;
     border-color: rgb(153, 153, 153);
-    border-style: none;
-    border-radius: 3px;
+    border-color: #FF6101;
+    border-width: 1px;
+    border-radius: 0.3em;   
+    padding-left: 50px;
+    margin-left: -40px;
 }
 .bir{
     background-color: #FF6101;
@@ -34,27 +69,19 @@
 .search:focus{
     height: 30px;
     width: 400px;
-    border-width: 3px;
+    border-width: 1px;
     outline: none;
-    border-style: none;
+    
     border-radius: 0.3em;
 }
 .arkasear{
+  padding-left: 10px;
     display: flex;
-    flex-direction: row;
-    border-width: 3px;
-    border-color: rgb(153, 153, 153);
-    border-style: solid;
-    border-radius: 0.3em;
-    width: 400px;
+    flex-direction: row;      
+    border-style: none;    
+    width: 400px;    
 }
-.arkasear:clicked{
-    border-width: 3px;
-    border-color: #FF6101;
-    border-style: solid;
-    border-radius: 0.3em;
-    width: 400px;
-}
+
 .aramacubuk{
     margin-top: 10px;
 }

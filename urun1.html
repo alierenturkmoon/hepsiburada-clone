@@ -1,0 +1,1269 @@
+!<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/urunler.css">
+    <link rel="shortcut icon" href="./img/hb logo.ico" type="image/x-icon"> <!--logo resmi-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hepsiburada</title>
+  </head>
+  <style>
+    .caticerik{ 
+	height: 20px;
+    overflow: hidden;
+	}
+	.devamyazi{
+	cursor:pointer;
+	}
+    .dropbtn {
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {}
+  #basadon {
+  position: fixed;
+  bottom: 20px;
+  right: 400px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+  color: black;
+}
+
+#basadon:hover {
+  background-color: #fff;
+}
+.ayrintilar{
+  padding-top: 100px;
+}
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  margin: 0 10px;
+}
+
+    </style>
+  <body>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-1"><a href="#" class="enust">Siparişlerim</a></div>
+              <div class="col-sm-2"><a href="#" class="enust">Süper Fiyat, Süper Teklif</a></div>
+              <div class="w-100px"><a href="#" class="enust">Yurt Dışından</a></div>
+              <div class="col-sm-1"><a href="#" class="enust">Kampanyalar</a></div>
+              <div class="w-100px"><a href="#" class="enust">Girişimci Kadınlar</a></div>
+              <div class="col-sm-2"><a href="#" class="enust">Müşteri Hizmetleri</a></div>
+              <div class="col-sm-2"><a href="#" class="enust">Hepsiburada Premium</a></div>
+              <div class="col-sm-2"><a href="#" class="enust">Hepsiburada'da Satıcı Ol</a></div>
+          </div>
+      </div>
+      <div>
+          <div class="navbar">
+            <div class="col row">
+              <div class="col-sm-2"></div>
+                <div class="col-sm-2 logos" style="margin-right: 0; right: 0; top: 0;" align="right">
+                  <div style=" width: 175px !important; height: 60px !important;">
+                    <a href="index.html"><img src="./img/Hepsiburada_logo_official.svg.png" alt="" class="logo"></a><br>
+                    <div style="display: flex; flex-direction: row;">
+                      <a href="#" class="link yazi">Premium'u </a> <p style="font-weight: 500; margin-left: 4px;"> keşfet</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+
+                </div>
+                <div class="col-sm-3" style="margin-left: 40px;">
+                    <div class="arkasear" style="margin-top: 10px;" onclick="changeBorderColor(),changeBackgroundColor()" id="myDiv"> 
+                        <img src="./img/aramacubuk.png" alt="" width="20px" height="20px" style=" margin-top: 10px; margin-left: 5px; padding: 0;">
+                        <input style="height: 40px;" type="text" placeholder="Ürün, kategori veya marka ara" class="search">
+                        <input type="button" value="ARA" class="ara" id="ARAA">
+                    </div>
+                </div>
+                <div class="col-sm-1" style="display: flex; margin-left: -180px;">
+                    <img src="./img/location-pin.png" alt="" width="24" height="26" style="margin-top: 10px;">
+                    <div class="dropdown">
+                      <p style="display: inline; padding-left: 5px;">Konum</p> <br>
+                      <button type="button" class="dropdown-toggle" data-toggle="dropdown" style="outline: none; background-color: white; border-style: none; color: #FF6101; font-size: small;">
+                        Konum Seç
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">İl seçin</a>
+                        <a class="dropdown-item" href="#">İlçe Seçin</a>
+                        <a class="dropdown-item" href="#">Mahalle Seçin</a>
+                      </div>
+                    </div>
+                </div>
+                    <div style="height: 48px; width: 157px; margin-right: 10px; margin-left: -30px;" class="girisyap">
+                        <img src="./img/user_747376.png" alt="" width="24" height="24" style="margin-right: 5px;">
+                        <div style="display: inline; margin: 0; justify-content: center;">
+                          <span style="margin-bottom: 10px; position: relative; top: 5px;">Giriş Yap</span><br>
+                          <span style="font-size: 10px; position: relative; top: -5px;">veya üye ol</span>
+                        </div>
+                        <img src="./img/down arrow.png" alt="" height="12px" width="12px" style="margin-left: 10px;">
+                    </div>
+                    <a href="sepet.html">
+                      <div style="background-color: gray; width: 136px !important; height: 48px; display: flex; justify-content: center; align-items: center; border-style: none; border-radius: 5px;">
+                          <img src="./img/image (7).png" alt="" width="20" height="15">
+                          <span style="margin-left: 5px;" class="sepet">Sepetim</span>
+                      </div>
+                    </a>
+            </div>
+          </div>
+      </div>
+      <div>
+          <div style="display: flex; flex-direction: row; height: 8px;">
+              <div class="col-sm-4 bir"></div>
+              <div class="col-sm-2 iki"></div>
+              <div class="col-sm-2 uc"></div>
+              <div class="col-sm-2 dort"></div>
+              <div class="col-sm-2 bes"></div>
+          </div>
+      </div>
+      <div>
+        <div><div>
+          <div>
+            <div>
+              <div style="background-color: #fafafa;">
+                <div class="menu">
+                  <ul style="list-style: none; display: flex; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 0px; padding: 0;">
+
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative; top: 10px;" >Elektronik</span>
+                                <div class="dropdown-content" style="margin-top: 32px; margin-left: -20px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; background-color: #000000; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;"></div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;"></div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;"></div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative; top: 10px;" >Moda</span>
+                                <div class="dropdown-content" style="margin-top: 32px; margin-left: -130px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        <div style="">
+
+                                          <a href="#" style="margin: 0; padding: 0;">
+                                            <span style="font-weight: 500; color: #FF6101; margin-left: -100px;">Moda Anasayfa</span><br>
+                                          </a>
+                                          <a href="#" style="margin-bottom: 0; padding-bottom: 0;">
+                                            <span style="font-weight: 500; color: #FF6101; margin-left: -170px;">Kadın</span><br>
+                                          </a>
+                                          
+                                        </div>
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative;" >Ev, Yaşam, Kırtasiye, Ofis</span>
+                                <div class="dropdown-content" style="margin-top: 9px; margin-left: -207px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        <ul>
+                                          <li></li>
+                                        </ul>
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative;" >Oto, Bahçe, Yapı Market</span>
+                                <div class="dropdown-content" style="margin-top: 9px; margin-left: -367px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        <ul>
+                                          <li></li>
+                                        </ul>
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative;" >Anne, Bebek, Oyuncak</span>
+                                <div class="dropdown-content" style="margin-top: 9px; margin-left: -520px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        <ul>
+                                          <li></li>
+                                        </ul>
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative;" >Spor, Outdoor</span>
+                                <div class="dropdown-content" style="margin-top: 9px; margin-left: -666px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        <ul>
+                                          <li></li>
+                                        </ul>
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative;" >Kozmetik, Kişisel Bakım</span>
+                                <div class="dropdown-content" style="margin-top: 9px; margin-left: -769px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        <ul>
+                                          <li></li>
+                                        </ul>
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative;" >Süpermarket, Pet Shop</span>
+                                <div class="dropdown-content" style="margin-top: 9px; margin-left: -922px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        <ul>
+                                          <li></li>
+                                        </ul>
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+                    <span class="cizgi"></span>
+                    <div class="listediv dropdown">
+                      <li class="dropbtn" style="height: 56px; margin-left: 20px; margin-right: 20px;">
+                        <span>
+                          <center>
+                            <div class="">
+                              <div class=" ">
+                                <span class="ayrintilar" style="position: relative;" >Kitap, Müzik, Film, Hobi</span>
+                                <div class="dropdown-content" style="margin-top: 9px; margin-left: -1071px; width: 1193px; height: 1200px;">
+                                    <div style="width: 60%; float: left; padding: 50px 16px 50px 30px; height: 1200px;">
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+                                        
+                                      </div>
+                                      <div style="width: 33.3%; padding-right: 16px; float: left;">
+
+                                      </div>
+                                    </div>
+                                    <div style="width: 40%; padding: 24px 16px 50px 18px; float: left;">
+
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                          </center>
+                        </span>
+                        <div>
+                        </div>
+                      </li>
+                    </div>
+                    </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-light" style="width: 1200px; height: 800px; border-style: none; border-radius: 10px;">
+      <div class="row">
+        <div class="bg-light" style="width: 599px; height: 1000px; margin-left: -15px; float: left; ">
+            <div style="width: 599px; height: 599px;">
+              <div class="">
+                <section style=" width: 599px; height: 599px; margin-left: 0;">
+                  <div id="Hepsiburada" class="carousel slide" data-ride="carousel" style="margin: 0;">
+                    <ol class="carousel-indicators">
+                      <li data-target="#Hepsiburada" data-slide-to="0" class="active"></li>
+                      <li data-target="#Hepsiburada" data-slide-to="1"></li>
+                      <li data-target="#Hepsiburada" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner text-center">
+                      <div class="carousel-item active">
+                        <h1 class="display-2 text-light">
+                          <div style=" width: 599px; height: 599px; margin-left: 0; background-image: url(./img/urunler/ornek/o1.jpg) ; display: flex; align-items: center; justify-content: center;">
+                          </div>
+                        </h1>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="bg-dark" style=" width: 599px; height: 599px; margin-left: 0;">
+                          <h1 class="display-2 text-light">
+                            <div style=" width: 599px; height: 599px; margin-left: 0; background-image: url(./img/urunler/ornek/o2.jpg); display: flex; align-items: center; justify-content: center;">
+                            </div>
+                          </h1>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="bg-dark" style=" width: 599px; height: 599px; margin-left: 0;">
+                          <h1 class="display-2 text-light">
+                            <div style=" width: 599px; height: 599px; margin-left: 0; background-image: url(./img/urunler/ornek/o3.jpg); display: flex; align-items: center; justify-content: center;">
+                            </div>
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#Hepsiburada" class="carousel-control-prev" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#Hepsiburada" class="carousel-control-next" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div class="row" style="list-style: none; margin-left: 30px;">
+                <div>
+                  <li style="width: 275px;">
+                    <div class="row">
+                      <div style="width: 200px;">
+                        <strong style="font-size: 12px;">
+                          Tencere Ebatı
+                        </strong>
+                      </div>
+                      <span style="font-size: 12px;">24 cm</span>
+                    </div>
+                  </li>
+                  <li style="width: 275px;">
+                    <div class="row">
+                      <div style="width: 200px;">
+                        <strong style="font-size: 12px;">
+                          Kapak Adedi
+                        </strong>
+                      </div>
+                      <span style="font-size: 12px;">6</span>
+                    </div>
+                  </li>
+                  <li style="width: 275px;">
+                    <div class="row">
+                      <div style="width: 200px;">
+                        <strong style="font-size: 12px;">
+                          Tencere Adedi
+                        </strong>
+                      </div>
+                      <span style="font-size: 12px;">6</span>
+                    </div>
+                  </li>
+                </div>
+                <div>
+                  <li style="width: 275px;">
+                    <div class="row">
+                      <div style="width: 200px;">
+                        <strong style="font-size: 12px;">
+                          İç Yüzey Kaplaması
+                        </strong>
+                      </div>
+                      <span style="font-size: 12px;">Çelik</span>
+                    </div>
+                  </li>
+                  <li style="width: 275px;">
+                    <div class="row">
+                      <div style="width: 200px;">
+                        <strong style="font-size: 12px;">
+                          Tencere Tipi
+                        </strong>
+                      </div>
+                      <span style="font-size: 12px;">Set</span>
+                    </div>
+                  </li>
+                  <li style="width: 275px;">
+                    <div class="row">
+                      <div style="width: 200px;">
+                        <strong style="font-size: 12px;">
+                          Türü
+                        </strong>
+                      </div>
+                      <span style="font-size: 12px;">Derin Tencere</span>
+                    </div>
+                  </li>
+                  <br>
+                  <a href="#" style="color: black; font-size: 12px; margin-left: -290px; font-family: 600; color: #797979; margin-top: 20px; text-decoration: none;">Tüm Özellikler</a>
+                </div>
+            </div>
+        </div>
+          <div style="padding: 20px;">
+            <p style="font-weight: 700; font-size: large; margin: 0;">Karaca Olympia 12 Parça Çelik Tencere Seti</p><br>
+            <a href="#" style="font-weight: 600; position: relative; top: -30px;">Karaca</a><br>
+            <div class="row">
+              <div>
+                <h2 style="font-weight: 700; margin-left: 15px;">2.499,00 TL</h2>
+                <a class="premium taksitle" href="#" style="margin-left: 15px; color: black; font-size: small; text-decoration: none;">234 TL x 12 aya varan <span style="font-weight: 500;">Taksitle</span></a>
+              </div>
+              <div>
+                <span style="margin-left: 200px; font-size: 20px; font-weight: 600;">4,0</span>
+                <span style="font-size: 20px;">
+                  <span style="color: #f8a572; font-size: 25px;">★</span>
+                  <span style="color: #f8a572; font-size: 25px;">★</span>
+                  <span style="color: #f8a572; font-size: 25px;">★</span>
+                  <span style="color: #f8a572; font-size: 25px;">★</span>
+                  <span style="color: #f8a572; font-size: 25px;">★</span>
+                </span><br>
+                <span style="margin-left: 272px; font-size: 11px; font-weight: 600;">1 Değerlendirme</span>
+              </div>
+            </div>
+            
+            <div>
+              <img src="./img/premium.png" alt="" width="48px" height="14px">
+              <a class="premium" href="#" style="color: black; font-size: small;">Bu ürünü Premium ile indirimli <span style="color: green; font-weight: 500;">2.349,00 TL</span>'ye al!</a>
+              <br>
+              <br>
+              <div style="width: 345px; height: 32px; background-color: #fff; border-radius: 4px; border-style: solid; border-width: 1px; border-color: #cccccc;">
+                <span style="font-weight: 600; color: #797979; margin-left: 3px;">Satıcı:</span>
+                <span><a href="#" style="font-weight: 600;">Karaca</a></span>
+                <span style="font-weight: 600; color: #797979;">| Puan <span style="background-color: green; border-style: none; border-radius: 4px; padding-left: 10px; padding-right: 10px; color: white; font-size: small; font-weight: 600;"> 9,5</span> |</span>
+                <span><a href="#" style="color: black; font-weight: 600; font-size: 14px; text-decoration: none;">Kampanyaları Gör <span style="background-color: #FF6101; color: white; border-style: none; border-radius: 50px; padding-left: 6px; padding-right: 6px; font-size: small; text-decoration: none;">1</span></a></span>
+              </div>
+              <br>
+              <div style="display: flex; flex-direction: row;">
+                <div class="counter">
+                  <button class="decrement">-</button>
+                  <span class="count">1</span><br>
+                  <button class="increment">+</button>
+                </div>
+                <a href="sepet.html" style="text-decoration: none;">
+                  <div style="background-color: #FF6101; width: 152px; height: 48px; margin-left: 10px; border-style: none; border-radius: 5px;">
+                    <img src="./img/image (7).png" alt="" width="26px" height="22px" style="margin-top: 15px; margin-left: 8px;">
+                    <span style="color: white; font-weight: 700; position: relative; top: 8px;">Sepete Ekle</span>
+                  </div>
+                </a>
+              </div>
+              <div class="row" style="width: 100%; padding: 5px; margin-top: 5px; background-color: #e0f8fd; border-style: solid; border-radius: 6px; border-color: #d1e8ec; border-width: 1px; display: flex; justify-content: center; align-items: center; margin-left: 1px;">
+                <img src="./img/shoppingloan.webp" alt="" style="margin-left:">
+                <span style="font-weight: 600; font-size: 13px;">137,52 TL</span>
+                <span style="font-size: 12px;">'den başlayan fiyatla sahip olmak ister misin?</span>
+                <div style="width: 57px; height: 28px; background-color: white; border-style: solid ; border-color: rgb(233, 233, 233); border-width: 1px; border-radius: 5px; display: flex; justify-content: center; align-items: center; text-decoration: none; margin-left: 70px;">
+                  <a href="#" style="font-size: 12px; text-decoration: none; color: black;">Faydalan</a>
+                </div><br>
+              </div>
+              <div style="margin-top: 5px;">
+                <a href="#">
+                  <img src="./img/listenekle.webp" alt="">
+                </a>
+              </div>
+              <div>
+
+              </div>
+              <hr>
+              <div style="padding: 10px; margin-top: 5px; width: 100%; height: 125px; background-color: white; border-style: none; border-radius: 5px;">
+                <div class="row">
+                  <span style="font-weight: 600; margin-left: 20px;">Teslimat Seçenekleri</span>
+                  <a href="#" style="text-decoration: none;">
+                    <div style="margin-left: 260px; background-color: #f7ddcd; width: 86px; height: 28px; border-radius: 5px; display: flex; justify-content: center; align-items: center;">
+                      <img src="./img/konum.svg" alt="" height="20px">
+                      <span style="font-size: 12px; font-weight: 600; color: #FF6101;">Konum Seç</span>
+                    </div>
+                  </a>
+                </div>
+                <br>
+                <div class="row" style="margin-left: 7px; ">
+                  <div>
+                    <span style="font-size: 13px; font-weight: 600;">Strandart Teslimat</span><br>
+                    <span style="font-size: 11px;">Tahmini 22 Ağustos Salı günü kargoda</span>
+                  </div>
+                  <div>
+                    <img src="./img/satici.webp" alt="" width="90" height="50" style="margin-left: 220;">
+                  </div>
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <br>
+  <section class="product-detail-container container">
+    <div class="row">
+      <div class="list-container">
+        <div class="ust">
+          <table class="product-nav">
+            <tbody class="row">
+                <tr style="border-style: solid; border-width: 1px; border-color: #707070; background-color: #797979; color: white; padding: 5 24; border-top-left-radius: 10px;">
+                    <td>
+                      <p style="font-weight: 400;">Ürün Açıklaması</p>
+                    </td>
+                </tr>
+              <tr style="border-style: solid; border-width: 1px; border-color: #707070; background-color: #797979; color: white; padding: 5 24;">
+                <td>
+                  <p style="font-weight: 400;">Kampanyalar</p>
+                </td>
+              </tr>
+              <tr style="border-style: solid; border-width: 1px; border-color: #707070; background-color: #797979; color: white; padding: 5 24  ;">
+                <td>
+                  <p style="font-weight: 400;">Değerlendirmeler</p>
+                </td>
+              </tr>
+              <tr style="border-style: solid; border-width: 1px; border-color: #707070; background-color: #797979; color: white; padding: 5 23;">
+                <td>
+                  <p style="font-weight: 400;">Soru & Cevap</p>
+                </td>
+              </tr>
+              <tr style="border-style: solid; border-width: 1px; border-color: #707070; background-color: #797979; color: white; padding: 5 24;">
+                <td>
+                  <p style="font-weight: 400;">Taksit Seçenekleri</p>
+                </td>
+              </tr>
+              <tr style="border-style: solid; border-width: 1px; border-color: #707070; background-color: #797979; color: white; padding: 5 24;">
+                <td>
+                  <p style="font-weight: 400;">Alışveriş Kredisi</p>
+                </td>
+              </tr>
+              <tr style="border-style: solid; border-width: 1px; border-color: #707070; background-color: #797979; color: white; padding: 5 24; border-top-right-radius: 10px;">
+                <td>
+                  <p style="font-weight: 400;">İptal Ve İade  Koşulları</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+                <div style="background-color: #fcfcfc;">
+                  <table>
+                      <tbody><tr>
+                          <td class="no-border">
+                                  <div>
+                                    <p>
+                                      <strong>Karaca Olympia 12 Parça Çelik Tencere Seti</strong>
+                                    </p>
+                                    <p><strong>Malzeme: </strong>304 Çelik</p>
+                                     <p><strong>Set İçeriği</strong></p>
+                                      <ul style="list-style: none; margin-left: -40px; font-size: 14px;">
+                                        <li>14 cm Derin Tencere</li>
+                                        <li>18 cm Derin Tencere</li>
+                                        <li>20 cm Derin Tencere</li>
+                                        <li>22 cm Derin Tencere</li>
+                                        <li>24 cm Karnıyarık Tencere</li>
+                                        <li>14 cm Kapaklı Sütlük</li>
+                                      </ul>
+                                    </div>
+                          </td>
+                      </tr>
+                  </tbody></table>
+                  <div></div>
+                  <table>
+                      <tbody><tr>
+                          <td>
+                              <table>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <div>
+                                                  <div>
+                                                    </div>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                              <table>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <div>
+                                                 <table>
+      <tbody>
+          <tr>
+              <th>Marka</th>
+              <td><a href="/karaca" title="Karaca">Karaca</a></td>
+          </tr>
+      </tbody>
+      </table>
+
+      <table class="data-list tech-spec">
+      <caption></caption>
+      <tbody>
+              <tr>
+                  <th>Tencere Adedi</th>
+                  <td>
+                          <span>6</span>
+                  </td>
+              </tr>
+              <tr>
+                  <th>Tencere Ebatı</th>
+                  <td>
+                          <span>24 cm</span>
+                  </td>
+              </tr>
+              <tr>
+                  <th>Türü</th>
+                  <td>
+                          <span>Derin Tencere</span>
+                  </td>
+              </tr>
+              <tr>
+                  <th>Kapak Adedi</th>
+                  <td>
+                          <span>6</span>
+                  </td>
+              </tr>
+              <tr>
+                  <th>Ürün Rengi</th>
+                  <td>
+                          <span>Gümüş</span>
+                  </td>
+              </tr>
+              <tr>
+                  <th>İç Yüzey Kaplaması</th>
+                  <td>
+                          <span>Çelik</span>
+                  </td>
+              </tr>
+              <tr>
+                  <th>Tencere Tipi</th>
+                  <td>
+                          <span>Set</span>
+                  </td>
+              </tr>
+
+      </tbody>
+      </table>
+      <table>
+        <caption>Diğer</caption>
+        <tbody>
+                <tr>
+                    <th>Garanti Süresi (Ay)</th>
+                    <td>
+                            <span>1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Yurt Dışı Satış</th>
+                    <td>
+                            <span>Yok</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Stok Kodu</th>
+                    <td>
+                            <span>HBCV00004L8J5T</span>
+                    </td>
+                </tr>
+
+      </tbody>
+      </table>
+      </div>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+            
+<div>
+<div>
+<a href="#" style="color: #000000; text-decoration: none;">
+    Hatalı İçerik Bildir
+</a>
+</div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+      <h6 style="margin-left: -20px; font-weight: 700; font">Önerilen reklamlı ürünler</h6>
+    </div>
+
+      <a href="#" style="text-decoration: none; width: 165px; margin-left: 30px;">
+          </a><div style="display: flex; flex-direction: row; justify-content: center; align-items: center;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 30px;">
+            <div>
+              
+            </div>
+              </a><div class="urunler" style="width: 165px; height: 333px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 30px;">
+                  <br>
+                  <div>
+                    <img src="./img/urunler/honorx9a.jpg" alt="televizyon" width="163" height="163" style="position: relative; top: -25px;">
+                  </div>
+                  </a><div><a href="#" style="text-decoration: none; width: 165px; margin-left: 30px;">
+                    </a><div style="margin-top: -50px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 30px;">
+                      <p class="uc-nokta" style="font-weight: light; font-size: small; margin-left: 5px; margin-bottom: 0 !important; color: black;">DHonor X9a 128 GB 8 GB RAM 5G (Honor Türkiye Garantili)</p>
+                      </a><center><a href="#" style="text-decoration: none; width: 165px; margin-left: 30px;">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i><br>
+                      <span style="color: black; font-weight: 700; position: relative; left: -37px; font-size: small;">9.479,00 TL</span>
+                      <br>
+                      <br>
+                      </a><a class="sepete-ekle" href="sepet.html" style="color: white  ; text-decoration: none;">Sepete Ekle</a>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+      
+            <a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+              </a><div class="urunler" style="width: 165px; height: 333px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                  <br>
+                  <div>
+                    <img src="./img/urunler/iphone11.jpg" alt="televizyon" width="163" height="163" style="position: relative; top: -25px;">
+                  </div>
+                  </a><div><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                    </a><div style="margin-top: -50px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                      <p class="uc-nokta" style="font-weight: light; font-size: small; margin-left: 5px; margin-bottom: 0 !important; color: black;">iPhone 11 64 GB</p>
+                      </a><center><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i><br>
+                      <span style="color: black; font-weight: 700; position: relative; left: -37px; font-size: small;">22.999,00 TL</span>
+                      <br>
+                      <br>
+                      </a><a class="sepete-ekle" href="sepet.html" style="color: white; text-decoration: none;">Sepete Ekle</a>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+            
+            <a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+              </a><div class="urunler" style="width: 165px; height: 333px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                  <br>
+                  <div>
+                    <img src="./img/urunler/iphone13.jpg" alt="televizyon" width="163" height="163" style="position: relative; top: -25px;">
+                  </div>
+                  </a><div><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                    </a><div style="margin-top: -50px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                      <p class="uc-nokta" style="font-weight: light; font-size: small; margin-left: 5px; margin-bottom: 0 !important; color: black;">iPhone 13 128 GB</p>
+                      </a><center><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i><br>
+                      <span style="color: black; font-weight: 700; position: relative; left: -37px; font-size: small;">37.199,00 TL</span>
+                      <br>
+                      <br>
+                      </a><a class="sepete-ekle" href="sepet.html" style="color: white; text-decoration: none;">Sepete Ekle</a>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+            
+            <a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+              </a><div class="urunler" style="width: 165px; height: 333px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                  <br>
+                  <div>
+                    <img src="./img/urunler/arcelikac6030.jpg" alt="televizyon" width="163" height="163" style="position: relative; top: -25px;">
+                  </div>
+                  </a><div><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                    </a><div style="margin-top: -50px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                      <p class="uc-nokta" style="font-weight: light; font-size: small; margin-left: 5px; margin-bottom: 0 !important; color: black;">Arçelik Ac 6030 Havadar Uzaktan Kumandalı Iyonizer Hava Soğutucu</p>
+                      </a><center><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i><br>
+                      <span style="color: black; font-weight: 700; position: relative; left: -37px; font-size: small;">7.239,00 TL</span>
+                      <br>
+                      <br>
+                      </a><a class="sepete-ekle" href="sepet.html" style="color: white; text-decoration: none;">Sepete Ekle</a>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+            
+            <a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+              </a><div class="urunler" style="width: 165px; height: 333px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                  <br>
+                  <div>
+                    <img src="./img/urunler/redmi12pro.jpg" alt="televizyon" width="163" height="163" style="position: relative; top: -25px;">
+                  </div>
+                  </a><div><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                    </a><div style="margin-top: -50px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                      <p class="uc-nokta" style="font-weight: light; font-size: small; margin-left: 5px; margin-bottom: 0 !important; color: black;">Xiaomi Redmi Note 12 Pro 256 GB 8 GB Ram (Xiaomi Türkiye Garantili)</p>
+                      </a><center><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i><br>
+                      <span style="color: black; font-weight: 700; position: relative; left: -37px; font-size: small;">12.279,00 TL</span>
+                      <br>
+                      <br>
+                      </a><a class="sepete-ekle" href="sepet.html" style="color: white; text-decoration: none;">Sepete Ekle</a>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+            
+            <a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+              </a><div class="urunler" style="width: 165px; height: 333px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                  <br>
+                  <div>
+                    <img src="./img/urunler/arac branda ust.jpg" alt="televizyon" width="163" height="163" style="position: relative; top: -25px;">
+                  </div>
+                  </a><div><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                    </a><div style="margin-top: -50px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                      <p class="uc-nokta" style="font-weight: light; font-size: small; margin-left: 5px; margin-bottom: 0 !important; color: black;">Huawei Matepad 11.5 8GB 128GB 11.5" Tablet+Klavye</p>
+                      </a><center><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i><br>
+                      <span style="color: black; font-weight: 700; position: relative; left: -37px; font-size: small;">7.498,99 TL</span>
+                      <br>
+                      <br>
+                      </a><a class="sepete-ekle" href="sepet.html" style="color: white; text-decoration: none;">Sepete Ekle</a>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+            
+            <a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+              </a><div class="urunler" style="width: 165px; height: 333px; background-color: white; border-style: solid; border-color: rgb(224, 224, 224); border-width: 1px; border-radius: 10px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                  <br>
+                  <div>
+                    <img src="./img/urunler/iphone11-128.jpg" alt="televizyon" width="163" height="163" style="position: relative; top: -25px;">
+                  </div>
+                  </a><div><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                    </a><div style="margin-top: -50px;"><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                      <p class="uc-nokta" style="font-weight: light; font-size: small; margin-left: 5px; margin-bottom: 0 !important; color: black;">iPhone 11 128 GB</p>
+                      </a><center><a href="#" style="text-decoration: none; width: 165px; margin-left: 10px;">
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i>
+                        <i>★</i><br>
+                      <span style="color: black; font-weight: 700; position: relative; left: -37px; font-size: small;">24.179,00 TL</span>
+                      <br>
+                      <br>
+                      </a><a class="sepete-ekle" href="sepet.html" style="color: white; text-decoration: none;">Sepete Ekle</a>
+                      </center>
+                    </div>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+        <br>
+  <div class="container">
+    <a class="col-sm-1" href="#">
+      <img src="./img/Hepsiburada_logo_official.svg.png" alt="logo" width="173" height="30" style="margin-left: -30px;">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <div class="row">
+        <a href="#" style="margin-left: 30px; text-decoration: none; color: black;">
+          <p style="font-weight: bold;">Yarın Kapında</p>
+          <img src="./img/hepsifooter/mobil-yarin-kapinda.svg" alt="" width="127" height="120">
+          <br>
+          <br>
+          <h6 style="font-size: 14px;">Yarın Kapında ile ihtiyaçlarına ertesi</h6>
+          <h6 style="font-size: 14px;"> gün sahip ol!</h6>
+        </a>
+        <a href="#" style="margin-left: 30px; text-decoration: none; color: black;">
+          <p style="font-weight: bold;">Tek Tıkla Güvenli Alışveriş</p>
+          <img src="./img/hepsifooter/mobil-tek-tikla-alisveris.svg" alt="" width="127" height="120">
+          <br>
+          <br>
+          <h6>Ödeme ve adres bilgilerinizi</h6>
+          <h6>kaydedin, güvenli alışveriş yapın.</h6>
+        </a>
+        <a href="#" style="margin-left: 30px; text-decoration: none; color: black;">
+          <p style="font-weight: bold;">Mobil Cebinizde</p>
+          <img src="./img/hepsifooter/mobil-cebinizde.svg" alt="" width="127" height="120">
+          <br>
+          <br>
+          <h6>Dilediğiniz her yerden güvenli</h6>
+          <h6>alışverişin keyfini çıkarın.</h6>
+        </a>
+        <a href="#" style="margin-left: 30px; text-decoration: none; color: black;">
+          <p style="font-weight: bold;">Kapında İade</p>
+          <img src="./img/hepsifooter/mobil-kapinda-iade.png" alt="" width="127" height="120">
+          <br>
+          <br>
+          <h6>Aldığınız ürünü iade etmek hiç bu</h6>
+          <h6>kadar kolay olmamıştı.</h6>
+        </a>
+      </div>
+    </center>
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+<hr>
+</div>
+<div class="container">
+<footer class="py-5">
+  <div class="row">
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Hepsiburada</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179);" >Kullanıcı Bilgilerim</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >İşlem Rehberi</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Hepsiburada.com Twitter Destek</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Mobil Uygulamalar</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Bilgi Toplumu Hizmetleri</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Güvenli Alışveriş Kılavuzu</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Kişisel Verilerin Korunması</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Bilgi Güvenliği Politikası</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >İş Sağlığı ve Güvenliği Çevre Politikamız</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Hepsiburada ile E-ticaret Reklamcılığı</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)" >Kurumsal Hediye Çeki</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Kategoriler</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Bilgisayar / Tablet / Telefon / Laptop</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kombi / Klimalar</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Çamaşır Makinesi / Bulaşık Makinesi</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Gram Altın / Reşat Altın / Yarım Altın </a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Ayçicek Yağları</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Süpürgeler / Robot Süpürge</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Airsoft / Fritozler</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kitap / Film / Müzik</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kış Lastiği / Oto Aksesuar</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Pet Shop / Süpermarket</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Mobilyalar / Mutfak Masa Takımları</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kahve Makinesi / Cay Makinesi</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kozmetik / Kişisel Bakım</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Led Tv / Elektronik</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Akülü Araba / Anne & Bebek</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Takı Mücevher / Saat Gözlük Aksesuar</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Duvar Kağıdı / Mobilya</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Bebek Arabası / Bebek Bezi</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">bebe yaka gömlek</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">taşlı topuklu ayakkabı</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">fiyonk topuklu ayakkabı</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">vintage ceket</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">vatkalı ceket</a></li>
+      </ul>
+    </div>
+  
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Özel Sayfalar</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Premium</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Okul Alışverişi</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Sevgililer Günü</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Anneler Günü</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Yılbaşı Hediyeleri</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Babalar Günü</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Kazandıran Çekiliş</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Popüler Aramalar</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Playstation 5</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">xbox series x / xbox series s</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">xbox one / nintendo</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Mi Band 6</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Bluetooth Kulaklık</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Uçak Bileti</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Tüm Kategoriler</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Tüm Satıcılar</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Yazarlar</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Bizi Takip Edin</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">About</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Aklınıza Takılan Bir Soru mu var</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary h6" style="color: rgb(179, 179, 179)">About</a></li>
+      </ul>
+    </div>
+    <hr>
+  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    <p>© 2023 Company, Inc. All rights reserved.</p>
+    <ul class="list-unstyled d-flex">
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </div>
+</footer>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+      const decrementButton = document.querySelector('.decrement');
+const incrementButton = document.querySelector('.increment');
+const countElement = document.querySelector('.count');
+
+let count = 1;
+
+decrementButton.addEventListener('click', () => {
+  if (count > 1) {
+    count--;
+    updateCount();
+  }
+});
+
+incrementButton.addEventListener('click', () => {
+  count++;
+  updateCount();
+});
+
+function updateCount() {
+  countElement.textContent = count;
+}
+
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

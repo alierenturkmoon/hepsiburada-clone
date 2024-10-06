@@ -1,0 +1,25 @@
+.premium:hover{
+    color: rgb(121, 121, 121) !important;
+}
+.decrement{
+    width: 27px;
+    height: 48px;
+    border-style: none;
+    background-color: rgb(199, 199, 199);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.increment{
+    width: 27px;
+    height: 48px;
+    border-style: none;
+    background-color: rgb(199, 199, 199);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.count{
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
